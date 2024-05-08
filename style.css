@@ -1,60 +1,108 @@
-.sidebar {
-    color: white;
-    background-color: rgb(39, 37, 37);
-    padding-top: 20px;
-    font-size: 20px;
-    overflow-y: auto;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 250px; /* Fixed width for medium and larger screens */
 
-    /* Additional styles */
-    padding-left: 15px; /* Add left padding for sidebar content */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
 }
 
-.sidebar a {
-    padding: 10px 0;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-}
-
-.content {
-    padding: 20px;
-    margin-left: 250px; /* Adjust this margin to match sidebar width */
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .card {
-    background-color: rgb(179, 179, 179);
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px; /* Add bottom margin between cards */
+    background: linear-gradient(135deg, #9b6404, #f1c897);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 40px;
 }
 
-.card-title {
-    font-size: 1.5rem;
+.card h2 {
+    text-align: center;
     color: #333;
+    margin-bottom: 20px;
 }
 
-.card-text {
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
     color: #555;
 }
 
-@media (max-width: 992px) {
-    .sidebar {
-        width: 100%; /* Full width on smaller screens */
-        position: static; /* Remove fixed positioning */
-        height: auto; /* Allow sidebar height to adjust based on content */
-    }
+.form-control {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #6e7b8a;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #000000;
     
-    .content {
-        margin-left: 0; /* Remove left margin on smaller screens */
-        padding-top: 80px; /* Provide space below fixed navbar */
-    }
-    
-    .card-title {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
-    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card-footer {
+    margin-top:50%
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+ul li:hover {
+    background-color: #eee;
 }
